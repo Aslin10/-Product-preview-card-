@@ -1,0 +1,137 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-compatible"content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <title>Frontend Mentor | Product preview card component</title>
+  <link rel="stylesheet" link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap" rel="stylesheet">
+ <style>
+  .heading{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    
+    color: hsl(228, 12%, 48%);
+  }
+  body{
+   
+    background-color: hsl(30, 38%, 92%);
+    font-size: 14px;
+  }
+  .card-title{
+    color: hsl(212, 21%, 14%);
+    font-family: "Fraunces", serif;
+    font-weight: 700;
+  }
+ .card-body{
+  background-color:hsl(0, 0%, 100%) ;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  
+ }
+ 
+
+ 
+
+
+@media(max-width:768px){
+  
+  .card{
+    display: block !important;
+    width:19rem !important;
+    
+    
+  
+
+  }
+ .footer button{
+  display: block !important;
+  margin:13px auto !important;
+  width: 250px !important;;
+  border-radius: 5px !important;
+  padding: 10px !important;
+  
+ }
+ img{
+  content: url(image-product-mobile.jpg);
+  border-top-left-radius: 7px !important;
+  border-top-right-radius: 7px !important;
+  
+ }
+ .card-body{
+  font-size: 13px;
+  border-bottom-left-radius: 7px !important;
+  border-bottom-right-radius: 7px !important;
+ }
+ 
+
+}
+  
+ 
+ 
+ 
+ </style>
+
+  
+  
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+ 
+</head>
+<body >
+  
+    <div class="container-fluid d-flex justify-content-center align-items-center align-content-center">
+        
+          <div class="card  mb-3 mt-3 "style="max-width:530px;">
+            <div class="row justify-content-center">
+            <div class="col-md-6  ">
+            <img src="image-product-desktop.jpg"alt="card"class="img-fluid  h-100 object-fit-cover rounded-start">
+          </div>
+        <div class="col-md-6">
+          <div class="card-body  rounded-end"> 
+            <small class="heading mt-1 " >P E R F U M E</small>
+            <h3 class="card-title fw-bold fs-2 mt-md-2 mb-md-3"> Gabrielle Essence Eau De Parfum</h3>
+            <p class="card-text "> A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+              Perfumer-Creator for the House of CHANEL.</p>
+              <div class="d-flex justify-content-between">
+              <span style="color: hsl(158, 36%, 37%);"class="fs-2 fw-bold"> $149.99</span>
+              <span class=" text-decoration-line-through m-auto ms-3 "> $169.99</span>
+            </div>
+          
+          <div class="footer ">
+            <button style="width: 200px;background-color:hsl(158, 36%, 37%); font-size:14px;" type="button"class="btn btn-success text-center py-md-2 my-md-2"><svg class="me-2" width="15" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M14.383 10.388a2.397 2.397 0 0 0-1.518-2.222l1.494-5.593a.8.8 0 0 0-.144-.695.8.8 0 0 0-.631-.28H2.637L2.373.591A.8.8 0 0 0 1.598 0H0v1.598h.983l1.982 7.4a.8.8 0 0 0 .799.59h8.222a.8.8 0 0 1 0 1.599H1.598a.8.8 0 1 0 0 1.598h.943a2.397 2.397 0 1 0 4.507 0h1.885a2.397 2.397 0 1 0 4.331-.376 2.397 2.397 0 0 0 1.12-2.021ZM11.26 7.99H4.395L3.068 3.196h9.477L11.26 7.991Zm-6.465 6.392a.8.8 0 1 1 0-1.598.8.8 0 0 1 0 1.598Zm6.393 0a.8.8 0 1 1 0-1.598.8.8 0 0 1 0 1.598Z" fill="#FFF"/></svg> Add to Cart</button>
+          </div> </div></div></div>
+         
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+  
+  <div class="attribution mt-2 text-center">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">BERLIN MARY</a>.
+  </div>
+  <script>
+        window.onresize=function(){
+        const wd=document.getElementById("box").clientWidth;
+       const Result=document.getElementById("width");
+       Result.innerHTML=wd + "px";
+        }
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
